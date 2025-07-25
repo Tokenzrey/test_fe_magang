@@ -1,0 +1,169 @@
+
+buat hooks untuk
+1. POST /vehicles
+    headers Authorization `Bearer {accessToken}`
+    req body:
+	{
+        "name": "ut sed",
+        "license_plate": "eiusmod dolore anim qui ",
+        "model": "in dolore consectetur",
+        "status": "INACTIVE"
+	}
+
+    response success:
+    {
+        "success": true,
+        "message": "Vehicle created.",
+        "responseObject": {
+            "created_at": "2025-07-25T03:29:12.566Z",
+            "updated_at": "2025-07-25T03:29:12.566Z",
+            "id": 14,
+            "name": "ut sed",
+            "license_plate": "fasdd123 ",
+            "model": "in dolore consectetur",
+            "status": "INACTIVE",
+            "user_id": 7
+        },
+        "statusCode": 201
+    }
+
+    response error:
+    {
+        "success": false,
+        "message": "License plate already exists.",
+        "responseObject": null,
+        "statusCode": 409
+    }
+
+2. PATCH /vehicles/5
+    headers Authorization `Bearer {accessToken}`
+    req body:
+    {
+        "license_plate": "af4123s",
+        "model": "12313123",
+        "name": "reprehenderit dolor laborum cupidatat esse",
+        "status": "INACTIVE"
+    }
+
+    response success:
+    {
+        "success": true,
+        "message": "Vehicle updated.",
+        "responseObject": {
+            "id": 5,
+            "name": "reprehenderit dolor laborum cupidatat esse",
+            "license_plate": "af4123s",
+            "model": "12313123",
+            "status": "INACTIVE",
+            "user_id": 7,
+            "created_at": "2025-07-23T21:50:07.000Z",
+            "updated_at": "2025-07-25T03:29:35.815Z",
+            "deleted_at": null
+        },
+        "statusCode": 200
+    }
+
+    response error:
+    {
+        "success": false,
+        "message": "License plate already exists.",
+        "responseObject": null,
+        "statusCode": 409
+    }
+
+3. DELETE /vehicles/5
+    headers Authorization `Bearer {accessToken}`
+    response success:
+    204 no content
+
+    response error:
+    {
+        "success": false,
+        "message": "Vehicle not found.",
+        "responseObject": null,
+        "statusCode": 404
+    }
+
+4. POST /vehicles
+    headers Authorization `Bearer {accessToken}`
+    req body:
+	{
+        "name": "ut sed",
+        "license_plate": "eiusmod dolore anim qui ",
+        "model": "in dolore consectetur",
+        "status": "INACTIVE"
+	}
+
+    response success:
+    {
+        "success": true,
+        "message": "Vehicle created.",
+        "responseObject": {
+            "created_at": "2025-07-25T03:29:12.566Z",
+            "updated_at": "2025-07-25T03:29:12.566Z",
+            "id": 14,
+            "name": "ut sed",
+            "license_plate": "fasdd123 ",
+            "model": "in dolore consectetur",
+            "status": "INACTIVE",
+            "user_id": 7
+        },
+        "statusCode": 201
+    }
+
+    response error:
+    {
+        "success": false,
+        "message": "License plate already exists.",
+        "responseObject": null,
+        "statusCode": 409
+    }
+
+2. PATCH /vehicles/5
+    headers Authorization `Bearer {accessToken}`
+    req body:
+    {
+        "license_plate": "af4123s",
+        "model": "12313123",
+        "name": "reprehenderit dolor laborum cupidatat esse",
+        "status": "INACTIVE"
+    }
+
+    response success:
+    {
+        "success": true,
+        "message": "Vehicle updated.",
+        "responseObject": {
+            "id": 5,
+            "name": "reprehenderit dolor laborum cupidatat esse",
+            "license_plate": "af4123s",
+            "model": "12313123",
+            "status": "INACTIVE",
+            "user_id": 7,
+            "created_at": "2025-07-23T21:50:07.000Z",
+            "updated_at": "2025-07-25T03:29:35.815Z",
+            "deleted_at": null
+        },
+        "statusCode": 200
+    }
+
+    response error:
+    {
+        "success": false,
+        "message": "License plate already exists.",
+        "responseObject": null,
+        "statusCode": 409
+    }
+
+3. DELETE /vehicles/5
+    headers Authorization `Bearer {accessToken}`
+    response success:
+    204 no content
+
+    response error:
+    {
+        "success": false,
+        "message": "Vehicle not found.",
+        "responseObject": null,
+        "statusCode": 404
+    }

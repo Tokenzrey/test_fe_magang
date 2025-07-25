@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    container_name: my-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # Sesuaikan env var di sini jika perlu
+      NODE_ENV: production
+    # Uncomment jika butuh mounting source code (development)
+    # volumes:
+    #   - .:/app

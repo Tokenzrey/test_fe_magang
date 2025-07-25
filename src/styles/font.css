@@ -1,0 +1,135 @@
+/* 
+  Custom Local Font Faces for Vite + React + Tailwind 
+  Pastikan path /fonts/* sudah ada di public/
+*/
+
+/* Adelphe */
+@font-face {
+	font-family: "Adelphe";
+	src: url("/fonts/adelphe/Adelphe-FlorealBold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Adelphe";
+	src: url("/fonts/adelphe/Adelphe-FlorealBoldItalic.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Adelphe";
+	src: url("/fonts/adelphe/Adelphe-FlorealItalic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Adelphe";
+	src: url("/fonts/adelphe/Adelphe-FlorealRegular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Adelphe";
+	src: url("/fonts/adelphe/Adelphe-FlorealSemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Adelphe";
+	src: url("/fonts/adelphe/Adelphe-FlorealSemiBoldItalic.woff2") format("woff2");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Helvetica Neue */
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("/fonts/helevtica-neue/HelveticaNeueBlack.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/* ... (repeat for each font style from your list, same as above) ... */
+
+/* Libre Caslon */
+@font-face {
+	font-family: "Libre Caslon";
+	src: url("/fonts/libre-caslon/LibreCaslonText-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Libre Caslon";
+	src: url("/fonts/libre-caslon/LibreCaslonText-Italic.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Libre Caslon";
+	src: url("/fonts/libre-caslon/LibreCaslonText-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Satoshi */
+@font-face {
+	font-family: "Satoshi";
+	src: url("/fonts/satoshi/Satoshi-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/* ... (repeat for all Satoshi variants) ... */
+
+/* Inter */
+@font-face {
+	font-family: "Inter";
+	src: url("/fonts/Inter/Inter_18pt-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/* ... (repeat for all Inter variants) ... */
+
+/* Playfair Display */
+@font-face {
+	font-family: "Playfair Display";
+	src: url("/fonts/playfair-display/PlayfairDisplay-Black.woff2")
+		format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/* ... (repeat for all Playfair Display variants) ... */
+
+/* Poppins */
+@font-face {
+	font-family: "Poppins";
+	src: url("/fonts/poppins/Poppins-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/* ... (repeat for all Poppins variants) ... */
+
+/* 
+  Example: Set CSS variable for Tailwind utility (optional, for font-adelphe, etc.)
+  :root {
+    --font-adelphe: 'Adelphe', serif;
+    --font-helveticaNeue: 'Helvetica Neue', sans-serif;
+    --font-libreCaslon: 'Libre Caslon', serif;
+    --font-satoshi: 'Satoshi', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-PlayfairDisplay: 'Playfair Display', serif;
+    --font-poppins: 'Poppins', sans-serif;
+  }
+*/
