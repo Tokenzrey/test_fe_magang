@@ -8,14 +8,14 @@ export function VehicleListContainer({
 }: {
 	onDetail: (id: number) => void;
 }) {
-	const accessToken = getToken() ?? '';
+	const accessToken = getToken() ?? "";
 
 	const {
 		data: vehicles = [],
 		isLoading,
 		isError,
 		error,
-	} = useVehicles(accessToken, 60000);
+	} = useVehicles(accessToken);
 
 	return (
 		<div className="space-y-6">

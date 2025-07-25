@@ -225,10 +225,8 @@ export function VehicleMapContainer({
 	const navigate = useNavigate();
 
 	const accessToken = getToken() || "";
-	const { data: vehicles = [], isLoading: isVehiclesLoading } = useVehicles(
-		accessToken,
-		60000
-	);
+	const { data: vehicles = [], isLoading: isVehiclesLoading } =
+		useVehicles(accessToken);
 
 	// --- Update vehicle details cache when fetched from child list item ---
 	const handleVehicleDetailUpdate = useCallback(
